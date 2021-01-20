@@ -11,10 +11,7 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body class="page">
-        <div class="include">
-            <include src="build/img/sprite.svg"></include>
-        </div>
-        <header class="page-header">
+         <header class="page-header">
             <nav class="navigation">
                 <a class="navigation__logo" href="#">
                     <svg class="navigation__logo-svg" width="68" height="21" viewBox="0 0 68 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -67,12 +64,13 @@
                       <div class="main__form-information">
                         <p class="main__form-header">Заполните поля ниже и мы подберем велосипед вашей мечты</p>
                         <input class="main__form-name" pattern="[A-Za-zА-Яа-яЁё]" type="text" name="text" id="name" placeholder="Введите ваше имя" />
-                        <input required class="main__form-phone" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" type="text" name="telephone" id="phone" placeholder="Введите ваш номер телефона" required/>
+                        <input class="main__form-phone" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" type="text" name="telephone" id="phone" placeholder="Введите ваш номер телефона" required/>
                         <button class="main__form-button button" type="submit">Подобрать велосипед мечты</button>
                       </div>
                     </form>
                   </div>
                 </div>
+            </section>
             <section class="about">
                 <div class="about__inner">
                   <p class="about__title">Несколько фактов о нас</p>
