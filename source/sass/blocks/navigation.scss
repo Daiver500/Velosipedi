@@ -98,6 +98,18 @@
     background-color: $navigation-menu-background;
     margin-bottom: 30px;
     padding: 15px 0 15px 15px;
+    position: relative;
+  }
+
+  .navigation__item::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/icon-arrow.svg);
   }
 
   .navigation__item:not(:last-child) {

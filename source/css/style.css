@@ -479,7 +479,17 @@ html {
   .navigation__item {
     background-color: #F6F6F6;
     margin-bottom: 30px;
-    padding: 15px 0 15px 15px; }
+    padding: 15px 0 15px 15px;
+    position: relative; }
+  .navigation__item::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/icon-arrow.svg); }
   .navigation__item:not(:last-child) {
     padding-right: 0; }
   .navigation__button {
@@ -596,7 +606,8 @@ html {
   .container {
     padding: 0; }
   .footer__contacts {
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
   .footer__link:not(:last-child) {
     padding-right: 0; }
   .footer__link-mail {
