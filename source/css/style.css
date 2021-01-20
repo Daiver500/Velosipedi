@@ -401,7 +401,28 @@ html {
 .include {
   display: none; }
 
-.navigation__buttons {
+.navigation__close,
+.navigation__open,
+.navigation__toggle {
+  border: none;
+  background-color: inherit; }
+
+.navigation__toggle-open {
+  background-color: #0AD9C6;
+  width: 50px;
+  height: 50px; }
+
+.navigation__toggle-close {
+  color: rgba(20, 21, 23, 0.2); }
+
+.navigation__open {
+  width: 30px;
+  height: 30px;
+  color: #000000; }
+
+.navigation__close {
+  width: 22px;
+  height: 22px;
   display: none; }
 
 .navigation__logo {
@@ -439,6 +460,34 @@ html {
 
 .navigation__item:not(:last-child) {
   padding-right: 135px; }
+
+@media (max-width: 1023px) {
+  .navigation__inner {
+    width: 100%; }
+  .navigation__logo,
+  .navigation__destinations {
+    background-color: #ffffff;
+    width: 100%; }
+  .navigation__destinations {
+    position: relative;
+    flex-direction: column; }
+  .navigation__button {
+    color: #48494D; }
+  .container {
+    margin: 0;
+    padding: 0; }
+  .navigation__destinations::after {
+    content: none; }
+  .navigation__close {
+    display: block; }
+  .hidden {
+    display: none; }
+  .navigation__toggle-open,
+  .navigation__toggle-close {
+    position: relative; }
+  .navigation__toggle-open,
+  .navigation__toggle-close {
+    left: 200px; } }
 
 .footer {
   margin-bottom: 100px; }
