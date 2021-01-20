@@ -74,10 +74,19 @@
     width: 100%;
   }
 
+  .navigation__logo {
+    position: relative;
+  }
+
   .navigation__logo,
-  .navigation__destinations {
+  .navigation__destinations,
+  .navigation__buttons {
     background-color: $white;
     width: 100%;
+  }
+
+  .navigation__buttons {
+    display: flex;
   }
 
   .navigation__destinations {
@@ -85,8 +94,21 @@
     flex-direction: column;
   }
 
+  .navigation__item {
+    background-color: $navigation-menu-background;
+    margin-bottom: 30px;
+    padding: 15px 0 15px 15px;
+  }
+
+  .navigation__item:not(:last-child) {
+    padding-right: 0;
+  }
+
   .navigation__button {
     color: $navigation-item-tablet;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
   }
 
   .container {
@@ -104,15 +126,5 @@
 
   .hidden {
     display: none;
-  }
-
-  .navigation__toggle-open,
-  .navigation__toggle-close {
-    position: relative;
-  }
-  
-  .navigation__toggle-open,
-  .navigation__toggle-close {
-    left: 200px;
   }
 }
