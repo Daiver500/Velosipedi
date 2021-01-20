@@ -13,10 +13,11 @@
     <body class="page">
         <header class="page-header">
             <nav class="navigation">
+                <a class="navigation__logo" href="#">
+                    <svg></svg>
+                </a>
                 <div class="navigation__inner container">
                     <div class="navigation__buttons">
-                        <a class="navigation__logo">
-                        </a>
                         <div>
                             <button class="navigation__toggle navigation__toggle-open hidden" type="button">
                             </button>
@@ -26,10 +27,10 @@
                     </div>
                     <div>
                         <ul class="navigation__destinations">
-                            <li class="navigation__item"><a class="navigation__link" href="blank.html"></a></li>
-                            <li class="navigation__item"><a class="navigation__link" href="blank.html"></a></li>
-                            <li class="navigation__item"><a class="navigation__link" href="blank.html"></a></li>
-                            <li class="navigation__item"><a class="navigation__link" href="blank.html"></a></li>
+                            <li class="navigation__item"><a class="navigation__link" href="blank.html"></a>О нас</li>
+                            <li class="navigation__item"><a class="navigation__link" href="blank.html"></a>Виды велосипедов</li>
+                            <li class="navigation__item"><a class="navigation__link" href="blank.html"></a>Видео про велосипеды</li>
+                            <li class="navigation__item"><a class="navigation__link" href="blank.html"></a>Контакты</li>
                         </ul>
                     </div>
                 </div>
@@ -37,15 +38,124 @@
         </header>
         <main class="page-content">
             <h1 class="visually-hidden">Сайт о велосипедах</h1>
-            <section >
+            <section class="main">
+                <div class="main__inner">
+                  <div class="main__header"></div>
+                  <a class="main__logo"></a>
+                    <p class="main__title">Мы продаем велосипеды</p>
+                    <p class="main__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+                  <div class="main__form">
+                    <form class="main__form-data" action="https://echo.htmlacademy.ru/" method="post">
+                      <div class="main__form-information">
+                        <p class="main__form-header">Заполните поля ниже и мы подберем велосипед вашей мечты</p>
+                        <input class="main__form-name" pattern="[A-Za-zА-Яа-яЁё]" type="text" name="text" id="name" placeholder="Введите ваше имя" />
+                        <input required class="main__form-phone" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" type="text" name="telephone" id="phone" placeholder="Введите ваш номер телефона" required/>
+                        <button class="main__form-button button" type="submit">Подобрать велосипед мечты</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            <section class="about">
+                <div class="about__inner">
+                  <p class="about__title">Несколько фактов о нас</p>
+                    <ul class="about__list">
+                        <li class="about__item">
+                            <span class="about__number">01</span>
+                            <p class="about__text">Самый широкий выбор велосипедов!</p>
+                        </li>
+                        <li class="about__item">
+                            <span class="about__number">02</span>
+                            <p class="about__text">Доставка велосипедов по всей России!</p>
+                        </li>
+                        <li class="about__item">
+                            <span class="about__number">03</span>
+                            <p class="about__text">Большой выбор крутых аксессуаров!</p>
+                        </li>
+                        <li class="about__item">
+                            <span class="about__number">04</span>
+                            <p class="about__text">Профессиональные консультации!</p>
+                        </li>
+                    </ul>
+                </div>
             </section>
-            <section>
+            <section class="catalog">
+                <div class="catalog__inner">
+                    <p class="catalog__title">Виды велосипедов</p>
+                    <ul class="catalog__list">
+                        <li class="catalog__item">
+                                <picture class="catalog__picture"> 
+                                    <!--<source type="image/webp" media="(max-width:767px)" srcset="img/standard-bike-tablet.webp" />
+                                    <source type="image/webp" media="(max-width:1023px)" srcset="img/standard-bike-tablet.webp" />
+                                    <source type="image/webp" srcset="img/standard-bike-desktop.webp" />-->
+                                    <source media="(max-width:767px)" srcset="img/standard-bike-tablet.jpg" />
+                                    <source media="(max-width:1023px)" srcset="img/standard-bike-tablet.jpg" />
+                                    <img class="catalog__image" src="img/standard-bike-desktop.jpg" alt="Дорожный велосипед" />
+                                </picture>
+                                <a class="catalog__link" href="blank.html">Дорожный велосипед</a>
+                        </li>
+                        <li class="catalog__item">
+                                <picture class="catalog__picture">
+                                    <!--<source type="image/webp" media="(max-width:767px)" srcset="img/mountain-bike-tablet.webp" />
+                                    <source type="image/webp" media="(max-width:1023px)" srcset="img/mountain-bike-tablet.webp" />
+                                    <source type="image/webp" srcset="img/mountain-bike-desktop.webp" />-->
+                                    <source media="(max-width:767px)" srcset="img/mountain-bike-tablet.jpg" />
+                                    <source media="(max-width:1023px)" srcset="img/mountain-bike-tablet.jpg" />
+                                    <img class="catalog__image" src="img/mountain-bike-desktop.jpg" alt="Горный велосипед" />
+                                </picture>
+                               <a class="catalog__link" href="blank.html">Горный велосипед</a>
+                        </li>
+                        <li class="catalog__item">
+                                <picture class="catalog__picture">
+                                    <!--<source type="image/webp" media="(max-width:767px)" srcset="img/child-bike-tablet.webp" />
+                                    <source type="image/webp" media="(max-width:1023px)" srcset="img/child-bike-tablet.webp" />
+                                    <source type="image/webp" srcset="img/child-bike-desktop.webp" />-->
+                                    <source media="(max-width:767px)" srcset="img/child-bike-tablet.jpg" />
+                                    <source media="(max-width:1023px)" srcset="img/child-bike-tablet.jpg" />
+                                    <img class="catalog__image" src="img/child-bike-desktop.jpg" alt="Детский велосипед" />
+                                </picture>
+                                <a class="catalog__link" href="blank.html">Детский велосипед</a>
+                        </li>
+                    </ul>
+                </div>
             </section>
-            <section>
+            <section class="video">
+                <div class="video__inner">
+                <div class="video__text">
+                  <p class="video__title">Видео про велосипеды</p>
+                  <p class="video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя</p>
+                </div>
+                <picture class="video__main">
+                    <!--<source type="image/webp" media="(max-width:767px)" srcset="img/bycicle-video-mobile.webp" />
+                    <source type="image/webp" media="(max-width:1023px)" srcset="img/bycicle-video-tablet.webp" />
+                    <source type="image/webp" srcset="img/bycicle-video-desktop.webp" />-->
+                    <source media="(max-width:767px)" srcset="img/bycicle-video-mobile.jpg" />
+                    <source media="(max-width:1023px)" srcset="img/bycicle-video-tablet.jpg" />
+                    <img class="video__image" src="img/bycicle-video-desktop.jpg" alt="Видео о велосипедах" />
+                </picture>
+                <button type="button"></button>
+                </div>
             </section>
         </main>
         <footer class="footer">
-            <section class="footer__inner container">
+            <section class="footer__inner">
+                <div class="footer__header">
+                <p class="footer__title">Как нас найти?</p>
+                <p class="footer__text">Мы находимся по адресу: Санкт-Петербург, Большая конюшенная, д.19</p>
+                </div>
+                <div class="footer__map">
+                    <picture class="footer__picture">
+                        <!--<source type="image/webp" media="(max-width:767px)" srcset="img/map-mobile.webp" />
+                        <source type="image/webp" media="(max-width:1023px)" srcset="img/map-tablet.webp" />
+                        <source type="image/webp" srcset="img/map-desktop.webp" />-->
+                        <source media="(max-width:767px)" srcset="img/mapo-mobile.jpg" />
+                        <source media="(max-width:1023px)" srcset="img/map-tablet.jpg" />
+                        <img class="footer_image" src="img/map-desktop.jpg" alt="Видео о велосипедах" />
+                    </picture>
+                </div>
+                <div class="footer__contacts">
+                    <a class="footer__link footer__link-mail" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+                    <a class="footer__link footer__link-tel" href="tel:+74998468446">+7 (499)-784-684-46</a>
+                </div>
             </section>
         </footer>
         <script src="js/menu.js"></script>
