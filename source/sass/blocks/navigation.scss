@@ -1,5 +1,15 @@
+.navigation {
+  margin-top: 21px;
+}
+
 .navigation__logo {
   position: absolute;
+  top: 290px;
+  left: 75px;
+}
+
+.navigation__toggles {
+  display: none;
 }
 
 .navigation__close,
@@ -73,6 +83,10 @@
   padding-right: 135px;
 }
 
+.navigation__buttons {
+  position: relative;
+}
+
 @media (max-width: $max-tablet-width) {
   .navigation__inner {
     width: 100%;
@@ -80,12 +94,21 @@
 
   .navigation__logo {
     position: relative;
+    top: 0;
+    left: 0;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .navigation__toggles {
+    display: block;
+    z-index: 2;
   }
 
   .navigation__logo,
   .navigation__destinations,
   .navigation__buttons {
-    background-color: $white;
     width: 100%;
   }
 
@@ -138,6 +161,11 @@
 
   .navigation__close {
     display: block;
+  }
+
+  .navigation__toggle-close {
+    padding-top: 10px;
+    padding-right: 30px;
   }
 
   .hidden {

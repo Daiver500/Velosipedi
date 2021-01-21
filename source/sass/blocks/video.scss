@@ -1,0 +1,61 @@
+.video {
+  background-color: $background-for-video;
+  min-height: 706px;
+  margin-bottom: 250px;
+}
+
+.video__inner {
+  position: relative;
+}
+
+.video__image {
+  position: absolute;
+  position: absolute;
+  left: -41%;
+  transform: translateX(50%);
+  top: 100%;
+}
+
+.video__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px;
+}
+
+.video__title,
+.video__text {
+  color: $white;
+  margin-top: 0;
+}
+
+.video__title {
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.video__text {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.video__button {
+  min-width: 65px;
+  height: 65px;
+  background-color: $button-color;
+  border-radius: 50%;
+  display: inline-flex;
+  position: absolute;
+  left: 44%;
+  transform: translateX(50%);
+  top: 185%;
+  display: flex;
+}
+
+.video__button-svg {
+  margin: auto auto;
+}

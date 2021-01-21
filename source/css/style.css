@@ -389,20 +389,59 @@ html {
   line-height: 34px;
   font-weight: normal;
   min-height: 100%;
-  color: #000000;
+  color: #000000; }
+
+.page-content {
   background-image: url("../img/background-desktop.jpg");
+  background-size: auto;
   background-position: 50% 0;
+  margin-top: -57px;
   background-repeat: no-repeat; }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  .page {
+  .page-content {
     background-image: url("../img/background-desktop@2x.jpg"); } }
+
+.page-header {
+  margin-top: -21px; }
 
 .include {
   display: none; }
 
+@media (max-width: 1023px) {
+  .page-content {
+    background-image: url("../img/background-tablet.jpg");
+    background-size: 100% 340px;
+    background-position: 50% 0;
+    margin-top: -57px;
+    background-repeat: no-repeat; } }
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
+  .page-content {
+    background-image: url("../img/background-tablet@2x.jpg"); } }
+
+@media (max-width: 767px) {
+  .page-content {
+    background-image: url("../img/background-mobile.jpg");
+    background-size: 100% 390px;
+    background-position: 50% 0;
+    margin-top: -57px;
+    background-repeat: no-repeat; } }
+
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
+  .page-content {
+    background-image: url("../img/background-mobile@2x.jpg"); } }
+
+.navigation {
+  margin-top: 21px; }
+
 .navigation__logo {
-  position: absolute; }
+  position: absolute;
+  top: 290px;
+  left: 75px; }
+
+.navigation__toggles {
+  display: none; }
 
 .navigation__close,
 .navigation__open,
@@ -464,15 +503,25 @@ html {
 .navigation__item:not(:last-child) {
   padding-right: 135px; }
 
+.navigation__buttons {
+  position: relative; }
+
 @media (max-width: 1023px) {
   .navigation__inner {
     width: 100%; }
   .navigation__logo {
-    position: relative; }
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .navigation__toggles {
+    display: block;
+    z-index: 2; }
   .navigation__logo,
   .navigation__destinations,
   .navigation__buttons {
-    background-color: #ffffff;
     width: 100%; }
   .navigation__buttons {
     display: flex; }
@@ -507,28 +556,186 @@ html {
     content: none; }
   .navigation__close {
     display: block; }
+  .navigation__toggle-close {
+    padding-top: 10px;
+    padding-right: 30px; }
   .hidden {
     display: none; } }
 
 .main__inner {
-  display: flex; }
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 205px;
+  padding-top: 300px; }
 
 .main__header {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  width: 390px; }
+
+.main__form {
+  width: 330px; }
+
+.main__title,
+.main__text,
+.main__form-header {
+  color: #ffffff; }
+
+.main__text,
+.main__form-header {
+  margin-top: 0; }
 
 .main__title {
   font-size: 46px;
   line-height: 64px;
   font-weight: 700;
-  color: #ffffff; }
+  margin-bottom: 25px;
+  margin-top: 40px; }
 
 .main__text {
   font-size: 20px;
   line-height: 32px;
   font-weight: 300;
+  opacity: 0.8;
+  margin-bottom: 0;
+  max-width: 380px; }
+
+.main__form-header {
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  max-width: 330px;
+  text-align: center; }
+
+.main__form-name,
+.main__form-phone {
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400; }
+
+.main__form-name,
+.main__form-phone {
+  min-width: 330px;
+  padding: 20px 10px; }
+
+.main__form-button {
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 600;
+  color: #000000;
+  padding: 20px 52px;
+  background-color: #0AD9C6;
+  border: none; }
+
+@media (max-width: 1023px) {
+  .container {
+    margin: 0 auto; }
+  .main__inner {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 135px;
+    padding-bottom: 70px; }
+  .main__form-header {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 330px;
+    text-align: center;
+    color: #000000; }
+  .main__header {
+    width: 435px;
+    text-align: center;
+    margin-bottom: 170px; }
+  .main__title {
+    margin-top: 0;
+    font-size: 30px;
+    line-height: 42px; }
+  .main__text {
+    font-size: 18px;
+    min-width: 435px; }
+  .main__form-name,
+  .main__form-phone {
+    padding: 12px 10px; }
+  .main__form-button {
+    padding: 20px 54px; } }
+
+@media (max-width: 767px) {
+  .main__inner {
+    padding-top: 120px;
+    padding-bottom: 70px; }
+  .main__header {
+    max-width: 300px;
+    margin-bottom: 120px; }
+  .main__form-information {
+    display: flex;
+    flex-direction: column;
+    min-width: 290px;
+    align-items: center; }
+  .main__text {
+    min-width: 300px; }
+  .main__form-header {
+    margin-bottom: 20px;
+    padding: 0 10px; }
+  .main__form-name,
+  .main__form-phone {
+    min-width: 290px;
+    padding: 12px 10px; }
+  .main__form-button {
+    padding: 14px 35px; } }
+
+.video {
+  background-color: #131314;
+  min-height: 706px;
+  margin-bottom: 250px; }
+
+.video__inner {
+  position: relative; }
+
+.video__image {
+  position: absolute;
+  position: absolute;
+  left: -41%;
+  transform: translateX(50%);
+  top: 100%; }
+
+.video__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px; }
+
+.video__title,
+.video__text {
   color: #ffffff;
-  opacity: 0.8; }
+  margin-top: 0; }
+
+.video__title {
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 600; }
+
+.video__text {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300; }
+
+.video__button {
+  min-width: 65px;
+  height: 65px;
+  background-color: #0AD9C6;
+  border-radius: 50%;
+  display: inline-flex;
+  position: absolute;
+  left: 44%;
+  transform: translateX(50%);
+  top: 185%;
+  display: flex; }
+
+.video__button-svg {
+  margin: auto auto; }
 
 .footer {
   margin-bottom: 100px; }
@@ -626,8 +833,6 @@ html {
     margin-bottom: 30px;
     padding-right: 0;
     padding-left: 0; }
-  .container {
-    padding: 0; }
   .footer__contacts {
     flex-direction: column;
     align-items: center; }

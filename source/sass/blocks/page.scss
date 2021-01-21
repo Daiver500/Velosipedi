@@ -12,17 +12,59 @@ html {
   font-weight: normal;
   min-height: 100%;
   color: $black;
+}
+
+.page-content {
   background-image: url("../img/background-desktop.jpg");
+  background-size: auto;
   background-position: 50% 0;
+  margin-top: -57px;
   background-repeat: no-repeat;
 }
 
+
 @media (min-resolution: 2dppx) {
-  .page {
+  .page-content {
     background-image: url("../img/background-desktop@2x.jpg");
   }
 }
 
+.page-header {
+  margin-top: -21px;
+}
+
 .include {
   display: none;
+}
+
+@media (max-width: $max-tablet-width) {
+  .page-content {
+    background-image: url("../img/background-tablet.jpg");
+    background-size: 100% 340px;
+    background-position: 50% 0;
+    margin-top: -57px;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .page-content {
+      background-image: url("../img/background-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .page-content {
+    background-image: url("../img/background-mobile.jpg");
+    background-size: 100% 390px;
+    background-position: 50% 0;
+    margin-top: -57px;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .page-content {
+      background-image: url("../img/background-mobile@2x.jpg");
+    }
+  }
 }
