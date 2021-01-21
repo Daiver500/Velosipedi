@@ -85,6 +85,17 @@
   background-image: url(../img/icon-phone.svg);
 }
 
+.footer__map iframe {
+  width: 100%;
+  min-height: 200px;
+  position: absolute;
+  z-index: 1;
+  border: 0;
+  left: 0;
+  right: 0;
+  min-height: 530px;
+}
+
 @media (max-width: $max-tablet-width) {
   .footer {
     margin-bottom: 50px;
@@ -103,6 +114,10 @@
 
   .footer__text {
     max-width: 645px;
+  }
+
+  .footer__map iframe {
+    min-height: 545px;
   }
 }
 
@@ -148,5 +163,9 @@
   .footer__link-mail::before,
   .footer__link-tel::before {
     left: 10px;
+  }
+
+  .footer__map iframe {
+    min-height: 250px;
   }
 }

@@ -810,6 +810,16 @@ html {
   height: 23px;
   background-image: url(../img/icon-phone.svg); }
 
+.footer__map iframe {
+  width: 100%;
+  min-height: 200px;
+  position: absolute;
+  z-index: 1;
+  border: 0;
+  left: 0;
+  right: 0;
+  min-height: 530px; }
+
 @media (max-width: 1023px) {
   .footer {
     margin-bottom: 50px; }
@@ -821,7 +831,9 @@ html {
     line-height: 24px;
     margin-top: 0; }
   .footer__text {
-    max-width: 645px; } }
+    max-width: 645px; }
+  .footer__map iframe {
+    min-height: 545px; } }
 
 @media (max-width: 767px) {
   .footer__title {
@@ -846,6 +858,8 @@ html {
     padding-left: 45px; }
   .footer__link-mail::before,
   .footer__link-tel::before {
-    left: 10px; } }
+    left: 10px; }
+  .footer__map iframe {
+    min-height: 250px; } }
 
 /*# sourceMappingURL=style.css.map */
