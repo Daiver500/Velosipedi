@@ -12,7 +12,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Open Sans"), url("../fonts/open-sans-v18-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/open-sans-v18-latin_cyrillic-regular.woff") format("woff"); }
+  src: local("Open Sans"), url("../fonts/open-sans-v18-latin_cyrillic-400.woff2") format("woff2"), url("../fonts/open-sans-v18-latin_cyrillic-400.woff") format("woff"); }
 
 /* open-sans-600 - latin_cyrillic */
 @font-face {
