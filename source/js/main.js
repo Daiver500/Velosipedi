@@ -6,6 +6,10 @@ const about = document.querySelector(".about");
 const catalog = document.querySelector(".catalog");
 const video = document.querySelector(".video");
 const footerHeader = document.querySelector(".footer__header");
+const navigationToggleClose = document.querySelector(".navigation__toggle-close")
+const navigationToggleOpen = document.querySelector(".navigation__toggle-open")
+const navigationMenu = document.querySelector(".navigation__destinations")
+
 
 navigationButtonAbout.addEventListener("click", function(){
  about.scrollIntoView({behavior: "smooth"});
@@ -22,4 +26,21 @@ navigationButtonVideo.addEventListener("click", function(){
 navigationButtonContacts.addEventListener("click", function(){
   footerHeader.scrollIntoView({behavior: "smooth"});
 })
+
+const navigationClose = () => {
+  navigationMenu.classList.add("hidden");
+  navigationToggleClose.classList.add("hidden");
+  navigationToggleOpen.classList.remove("hidden");
+}
+
+const navigationOpen = () => {
+  navigationMenu.classList.remove("hidden");
+  navigationToggleClose.classList.remove("hidden");
+  navigationToggleOpen.classList.add("hidden");
+}
+
+navigationToggleClose.addEventListener("click", navigationClose);
+
+navigationToggleOpen.addEventListener("click", navigationOpen);
+
 
