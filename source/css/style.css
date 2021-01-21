@@ -401,6 +401,9 @@ html {
 .include {
   display: none; }
 
+.navigation__logo {
+  position: absolute; }
+
 .navigation__close,
 .navigation__open,
 .navigation__toggle {
@@ -506,6 +509,26 @@ html {
     display: block; }
   .hidden {
     display: none; } }
+
+.main__inner {
+  display: flex; }
+
+.main__header {
+  display: flex;
+  flex-direction: column; }
+
+.main__title {
+  font-size: 46px;
+  line-height: 64px;
+  font-weight: 700;
+  color: #ffffff; }
+
+.main__text {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 300;
+  color: #ffffff;
+  opacity: 0.8; }
 
 .footer {
   margin-bottom: 100px; }
