@@ -98,6 +98,11 @@
     position: absolute;
   }
 
+  .catalog__title {
+    font-size: 22px;
+    line-height: 34px;
+  }
+
   .catalog__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -137,9 +142,26 @@
   .catalog__smallellipse-tablet {
     top: 456px;
     left: 478px;
+  }
 }
 
-  
-  
+@media (max-width: $max-mobile-width) {
+  .catalog__list {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .catalog__title {
+    margin-bottom: 30px;
+  }
+
+  .catalog__smallellipse-tablet {
+    top: 833px;
+    left: 245px;
+  }
+
+  .catalog__bigellipse-tablet {
+    top: 262px;
+    left: 2px;
+  }
 }

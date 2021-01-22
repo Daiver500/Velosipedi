@@ -60,5 +60,26 @@
   .about__item {
     margin-bottom: 40px;
   }
-  
+
+  .about__title {
+    font-size: 24px;
+    line-height: 41px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .about__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__item {
+    font-size: 18px;
+    margin-bottom: 35px;
+  }
+
+  .about__item:not(:last-child) {
+    padding-right: 0;
+}
 }

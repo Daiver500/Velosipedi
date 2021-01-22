@@ -398,6 +398,10 @@ html {
   margin-top: -57px;
   background-repeat: no-repeat; }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .page-content {
+    background-image: url("../img/background-desktop@2x.jpg"); } }
+
 .page-header {
   margin-top: -21px; }
 
@@ -412,6 +416,10 @@ html {
     margin-top: -57px;
     background-repeat: no-repeat; } }
 
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
+  .page-content {
+    background-image: url("../img/background-tablet@2x.jpg"); } }
+
 @media (max-width: 767px) {
   .page-content {
     background-image: url("../img/background-mobile.jpg");
@@ -419,6 +427,10 @@ html {
     background-position: 50% 0;
     margin-top: -57px;
     background-repeat: no-repeat; } }
+
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
+  .page-content {
+    background-image: url("../img/background-mobile@2x.jpg"); } }
 
 .navigation {
   margin-top: 21px; }
@@ -650,6 +662,8 @@ html {
   .main__inner {
     padding-top: 120px;
     padding-bottom: 70px; }
+  .main__form {
+    width: 320px; }
   .main__header {
     max-width: 300px;
     margin-bottom: 120px; }
@@ -719,7 +733,21 @@ html {
   .about__item:not(:last-child) {
     padding-right: 30px; }
   .about__item {
-    margin-bottom: 40px; } }
+    margin-bottom: 40px; }
+  .about__title {
+    font-size: 24px;
+    line-height: 41px;
+    margin-bottom: 30px; } }
+
+@media (max-width: 767px) {
+  .about__list {
+    display: flex;
+    flex-direction: column; }
+  .about__item {
+    font-size: 18px;
+    margin-bottom: 35px; }
+  .about__item:not(:last-child) {
+    padding-right: 0; } }
 
 .catalog {
   background-color: #F6F7F9;
@@ -801,6 +829,9 @@ html {
   .catalog__smallellipse-tablet {
     display: block;
     position: absolute; }
+  .catalog__title {
+    font-size: 22px;
+    line-height: 34px; }
   .catalog__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -826,6 +857,19 @@ html {
   .catalog__smallellipse-tablet {
     top: 456px;
     left: 478px; } }
+
+@media (max-width: 767px) {
+  .catalog__list {
+    display: flex;
+    flex-direction: column; }
+  .catalog__title {
+    margin-bottom: 30px; }
+  .catalog__smallellipse-tablet {
+    top: 833px;
+    left: 245px; }
+  .catalog__bigellipse-tablet {
+    top: 262px;
+    left: 2px; } }
 
 .video {
   background-color: #131314;
@@ -897,6 +941,21 @@ html {
   .video__button {
     left: 40%;
     top: 170%; } }
+
+@media (max-width: 767px) {
+  .video {
+    min-height: 380px; }
+  .video__title {
+    font-size: 24px; }
+  .video__header {
+    padding-right: 10px;
+    padding-left: 10px; }
+  .video__image {
+    left: -40%;
+    top: 110%; }
+  .video__button {
+    left: 31%;
+    top: 134%; } }
 
 .footer {
   padding-bottom: 100px;
