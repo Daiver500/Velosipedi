@@ -64,8 +64,8 @@
                     <form class="main__form-data" action="https://echo.htmlacademy.ru/" method="post">
                       <div class="main__form-information">
                         <p class="main__form-header">Заполните поля ниже и мы подберем велосипед вашей мечты</p>
-                        <input class="main__form-name" pattern="[A-Za-zА-Яа-яЁё]" type="text" name="text" id="name" placeholder="Введите ваше имя" />
-                        <input class="main__form-phone" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" type="text" name="telephone" id="phone" placeholder="Введите ваш номер телефона" required/>
+                        <input class="main__form-name" pattern="^[A-Za-zА-Яа-яЁё\s]+$"  type="text" name="text" id="name" placeholder="Введите ваше имя" />
+                        <input class="main__form-phone" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" type="text" name="telephone" id="phone" placeholder="+7 Введите 10 цифр номера" required/>
                         <button class="main__form-button button" type="submit">Подобрать велосипед мечты</button>
                       </div>
                     </form>
