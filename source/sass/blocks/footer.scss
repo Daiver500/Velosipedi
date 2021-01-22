@@ -1,5 +1,6 @@
 .footer {
-    margin-bottom: 100px;
+  padding-bottom: 100px;
+  padding-top: 150px
 }
 
 .footer__header {
@@ -98,6 +99,7 @@
 @media (max-width: $max-tablet-width) {
   .footer {
     margin-bottom: 50px;
+    padding-top: 200px;
   }
 
   .footer__title,

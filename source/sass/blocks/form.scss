@@ -1,9 +1,8 @@
-
 .main__inner {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 205px;
-  padding-top: 300px;
+  padding-bottom: 100px;
+  padding-top: 175px;
 }
 
 .main__header {
@@ -95,6 +94,7 @@
     max-width: 330px;
     text-align: center;
     color: $black;
+    margin-top: 30px;
   }
   
   .main__header {

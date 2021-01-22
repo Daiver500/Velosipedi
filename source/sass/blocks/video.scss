@@ -1,7 +1,6 @@
 .video {
   background-color: $background-for-video;
   min-height: 706px;
-  margin-bottom: 250px;
 }
 
 .video__inner {
@@ -21,6 +20,9 @@
   flex-direction: column;
   align-items: center;
   padding-top: 120px;
+  padding-right: 305px;
+  padding-left: 305px;
+  text-align: center;
 }
 
 .video__title,
@@ -58,4 +60,25 @@
 
 .video__button-svg {
   margin: auto auto;
+}
+
+@media (max-width: $max-tablet-width) {
+  .video {
+    min-height: 413px;
+  }
+
+  .video__title {
+    font-size: 24px;
+  }
+
+  .video__header {
+    padding-right: 150px;
+    padding-left: 150px;
+    padding-top: 70px;
+  }
+
+  .video__image {
+    left: -17%;
+    top: 105%;
+  }
 }
