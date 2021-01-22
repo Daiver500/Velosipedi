@@ -400,7 +400,8 @@ html {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .page-content {
-    background-image: url("../img/background-desktop@2x.jpg"); } }
+    background-image: url("../img/background-desktop@2x.jpg");
+    background-size: 2560px; } }
 
 .page-header {
   margin-top: -21px; }
@@ -418,7 +419,8 @@ html {
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
   .page-content {
-    background-image: url("../img/background-tablet@2x.jpg"); } }
+    background-image: url("../img/background-tablet@2x.jpg");
+    background-size: 1600px; } }
 
 @media (max-width: 767px) {
   .page-content {
@@ -430,7 +432,8 @@ html {
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
   .page-content {
-    background-image: url("../img/background-mobile@2x.jpg"); } }
+    background-image: url("../img/background-mobile@2x.jpg");
+    background-size: 640px; } }
 
 .navigation {
   margin-top: 21px; }

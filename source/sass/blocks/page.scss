@@ -26,6 +26,7 @@ html {
 @media (min-resolution: 2dppx) {
   .page-content {
     background-image: url("../img/background-desktop@2x.jpg");
+    background-size: 2560px;
   }
 }
 
@@ -49,6 +50,7 @@ html {
   @media (min-resolution: 2dppx) {
     .page-content {
       background-image: url("../img/background-tablet@2x.jpg");
+      background-size: 1600px;
     }
   }
 }
@@ -65,6 +67,7 @@ html {
   @media (min-resolution: 2dppx) {
     .page-content {
       background-image: url("../img/background-mobile@2x.jpg");
+      background-size: 640px;
     }
   }
 }
