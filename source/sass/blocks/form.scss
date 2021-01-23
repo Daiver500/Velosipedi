@@ -68,6 +68,8 @@
 .main__form-phone {
   min-width: 326px;
   padding: 10px 10px;
+  border-radius: 5px;
+  border: 1px solid $border-color;
 }
 
 .main__form-button {
@@ -78,6 +80,7 @@
   padding: 14px 52px;
   background-color: $button-color;
   border: none;
+  border-radius: 5px;
 }
 
 @media (max-width: $max-tablet-width) {
@@ -88,8 +91,12 @@
   .main__inner {
     flex-direction: column;
     align-items: center;
-    padding-top: 135px;
-    padding-bottom: 70px;
+    padding-top: 5px;
+    padding-bottom: 74px;
+  }
+
+  .main__form {
+    margin-top: 149px;
   }
 
   .main__form-header {
@@ -98,13 +105,13 @@
     max-width: 330px;
     text-align: center;
     color: $black;
-    margin-top: 30px;
   }
   
   .main__header {
     width: 435px;
     text-align: center;
-    margin-bottom: 170px;
+    margin-bottom: 0;
+    margin-top: 130px;
   }
 
   .main__title {
@@ -120,11 +127,11 @@
 
   .main__form-name,
   .main__form-phone {
-    padding: 12px 10px;
+    padding: 10px 10px;
   }
 
   .main__form-button {
-    padding: 20px 54px;
+    padding: 15px 54px;
   }
 }
 
@@ -132,15 +139,19 @@
   .main__inner {
     padding-top: 120px;
     padding-bottom: 70px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .main__form {
     width: 320px;
+    margin-top: 134px;
   }
 
   .main__header {
     max-width: 300px;
-    margin-bottom: 120px;
+    margin-bottom: 0;
+    margin-top: 0;
   }
 
   .main__form-information {

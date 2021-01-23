@@ -78,13 +78,19 @@
   }
 
   .video__image {
-    left: -17%;
-    top: 105%;
+    left: -16%;
+    top: 110%;
   }
 
   .video__button {
-    left: 40%;
-    top: 170%;
+    left: 39%;
+    top: 159%;
+    min-width: 90px;
+    height: 90px;
+  }
+
+  .video__text {
+    padding: 0 15px;
   }
 }
 
@@ -100,16 +106,22 @@
   .video__header {
     padding-right: 10px;
     padding-left: 10px;
+    padding-top: 85px;
   }
 
   .video__image {
     left: -40%;
-    top: 110%;
+    top: 114%;
   }
 
   .video__button {
+    min-width: 65px;
+    height: 65px;
     left: 31%;
     top: 134%;
   }
 
+  .video__text {
+    padding: 0 0;
+  }
 }

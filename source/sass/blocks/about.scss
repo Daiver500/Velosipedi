@@ -48,11 +48,15 @@
 }
 
 @media (max-width: $max-tablet-width) {
+  .about {
+    padding-top: 0;
+  }
+
   .about__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 0px 25px;
+    padding: 0px 90px;
   }
 
   .about__item:not(:last-child) {
@@ -74,6 +78,7 @@
   .about__list {
     display: flex;
     flex-direction: column;
+    padding: 0px 56px;
   }
 
   .about__item {
