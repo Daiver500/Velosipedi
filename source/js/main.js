@@ -12,7 +12,7 @@ const navigationMenu = document.querySelector(".navigation__destinations")
 
 
 navigationButtonAbout.addEventListener("click", function(){
- about.scrollIntoView({behavior: "smooth"});
+  about.scrollIntoView({behavior: "smooth"});
 })
 
 navigationButtonCatalog.addEventListener("click", function(){
@@ -42,5 +42,3 @@ const navigationOpen = () => {
 navigationToggleClose.addEventListener("click", navigationClose);
 
 navigationToggleOpen.addEventListener("click", navigationOpen);
-
-

@@ -8,9 +8,12 @@
         <link rel="preload" href="css/style.css" as="style" />
         <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-400.woff" as="font" />
         <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-400.woff2" as="font" />
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style.min.css" />
     </head>
     <body class="page">
+      <div class="include">
+        <include src="build/img/sprite.svg"></include>
+      </div>
          <header class="page-header">
             <nav class="navigation">
                  <div class="navigation__inner container">
@@ -29,13 +32,19 @@
                         </a>
                         <div class="navigation__toggles">
                             <button class="navigation__toggle navigation__toggle-open hidden" type="button">
-                                <svg class="navigation__open" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!--<svg class="navigation__open" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 21H26.25V20H3.75V21ZM3.75 14.75H26.25V13.75H3.75V14.75ZM3.75 7.5V8.5H26.25V7.5H3.75Z" fill="currentColor"/>
-                               </svg>
+                               </svg>-->
+                               <svg width="30" height="30">
+                                <use xlink:href="#icon-menu-button"></use>
+                              </svg>
                             </button>
-                            <button class="navigation__toggle navigation__toggle-close" type="button">
+                            <button class="navigation__toggle navigation__toggle-close" type="button"><!--
                                 <svg class="navigation__close" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 23.7213L23 1M23 23.7213L1 1" stroke="#141517" stroke-opacity="0.2" stroke-linecap="round" stroke-linejoin="round" fill="currentColor"/>
+                                </svg>-->
+                                <svg width="24" height="25">
+                                  <use xlink:href="#icon-close-button"></use>
                                 </svg>
                             </button>
                         </div>
@@ -96,6 +105,7 @@
                 </div>
             </section>
             <section class="catalog">
+              <h2 class="visually-hidden">Каталог велосипедов</h2>
                 <div class="catalog__inner container">
                     <p class="catalog__title">Виды велосипедов</p>
                     <svg class="catalog__bigellipse-desktop" width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -115,10 +125,10 @@
                     </svg>
                     <svg class="catalog__smallellipse-tablet" width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="34" cy="34" r="27.5" stroke="#0AD9C6" stroke-width="13"/>
-                    </svg>  
+                    </svg>
                     <ul class="catalog__list">
                         <li class="catalog__item">
-                                <picture class="catalog__picture"> 
+                                <picture class="catalog__picture">
                                     <!--<source type="image/webp" media="(max-width:1023px)" srcset="img/standard-bike-tablet.webp, img/standard-bike-tablet@2x.webp 2x" />
                                     <source type="image/webp" srcset="img/standard-bike-desktop.webp, img/standard-bike-desktop@2x.webp 2x " />-->
                                     <source media="(max-width:767px)" srcset="img/standard-bike-tablet.jpg 1x, img/standard-bike-tablet@2x.jpg 2x " />
@@ -128,7 +138,7 @@
                                 <a class="catalog__link" href="#">Дорожный велосипед</a>
                         </li>
                         <li class="catalog__item">
-                            <picture class="catalog__picture"> 
+                            <picture class="catalog__picture">
                                 <!--<source type="image/webp" media="(max-width:1023px)" srcset="img/mountain-bike-tablet.webp, img/mountain-bike-tablet@2x.webp 2x" />
                                 <source type="image/webp" srcset="img/mountain-bike-desktop.webp, img/mountain-bike-desktop@2x.webp 2x " />-->
                                 <source media="(max-width:767px)" srcset="img/mountain-bike-tablet.jpg 1x, img/mountain-bike-tablet@2x.jpg 2x " />
@@ -138,7 +148,7 @@
                                <a class="catalog__link" href="#">Горный велосипед</a>
                         </li>
                         <li class="catalog__item">
-                            <picture class="catalog__picture"> 
+                            <picture class="catalog__picture">
                                 <!--<source type="image/webp" media="(max-width:1023px)" srcset="img/child-bike-tablet.webp, img/child-bike-tablet@2x.webp 2x" />
                                 <source type="image/webp" srcset="img/child-bike-desktop.webp, img/child-bike-desktop@2x.webp 2x " />-->
                                 <source media="(max-width:767px)" srcset="img/child-bike-tablet.jpg 1x, img/child-bike-tablet@2x.jpg 2x " />
@@ -151,6 +161,7 @@
                 </div>
             </section>
             <section class="video">
+              <h2 class="visually-hidden">Видео о велосипедах</h2>
                 <div class="video__inner container">
                 <div class="video__header">
                   <p class="video__title">Видео про велосипеды</p>
@@ -186,7 +197,7 @@
                         <source media="(max-width:1023px)" srcset="img/map-tablet.jpg" />
                         <img class="footer_image" src="img/map-desktop.jpg" alt="Видео о велосипедах" />
                     </picture>
-                    
+
                 </div>
                 <div class="footer__contacts">
                     <a class="footer__link footer__link-mail" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
@@ -197,4 +208,3 @@
         <script src="js/main.js"></script>
     </body>
 </html>
-
