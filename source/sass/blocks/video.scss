@@ -9,17 +9,16 @@
 
 .video__image {
   position: absolute;
-  position: absolute;
-  left: -41%;
+  left: -14%;
   transform: translateX(50%);
-  top: 100%;
+  top: 111%;
 }
 
 .video__header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 120px;
+  padding-top: 110px;
   padding-right: 305px;
   padding-left: 305px;
   text-align: center;
@@ -43,6 +42,7 @@
   font-size: 16px;
   line-height: 28px;
   font-weight: 300;
+  padding: 0 200px;
 }
 
 .video__button {
@@ -52,9 +52,9 @@
   border-radius: 50%;
   display: inline-flex;
   position: absolute;
-  left: 44%;
+  left: 46%;
   transform: translateX(50%);
-  top: 185%;
+  top: 200%;
   display: flex;
 }
 

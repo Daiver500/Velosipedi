@@ -1,18 +1,22 @@
 .main__inner {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 100px;
+  padding-bottom: 330px;
   padding-top: 175px;
+  padding-right: 190px;
+  padding-left: 191px;
 }
 
 .main__header {
   display: flex;
   flex-direction: column;
   width: 390px;
+  margin-top: 159px;
 }
 
 .main__form {
   width: 330px;
+  margin-top: 152px;
 }
 
 .main__title,
@@ -62,8 +66,8 @@
 
 .main__form-name,
 .main__form-phone {
-  min-width: 330px;
-  padding: 20px 10px;
+  min-width: 326px;
+  padding: 10px 10px;
 }
 
 .main__form-button {
@@ -71,7 +75,7 @@
   line-height: 21px;
   font-weight: 600;
   color: $black;
-  padding: 20px 52px;
+  padding: 14px 52px;
   background-color: $button-color;
   border: none;
 }

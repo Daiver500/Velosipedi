@@ -1,7 +1,7 @@
 .catalog {
   background-color: $light-grey;
-  padding-top: 150px;
-  padding-bottom: 147px;
+  padding-top: 240px;
+  padding-bottom: 130px;
 }
 
 .catalog__inner {
@@ -22,7 +22,7 @@
   margin: 0;
   display: flex;
   text-align: center;
-  padding: 0 30px;
+  padding: 0 120px;
 }
 
 .catalog__link {
@@ -33,7 +33,7 @@
 }
 
 .catalog__item:not(:last-child) {
-  padding-right: 50px;
+  padding-right: 15px;
 }
 
 .catalog__item:first-child {
@@ -60,13 +60,13 @@
 }
 
 .catalog__smallellipse-desktop {
-  top: 50px;
-  left: 927px; 
+  top: 57px;
+  right: 119px;
 }
 
 .catalog__bigellipse-desktop {
   top: 250px;
-  left: -50px; 
+  left: 102px; 
 }
 
 .catalog__rectangle-right,
@@ -76,12 +76,12 @@
 
 .catalog__rectangle-right {
   top: 112px;
-  left: 355px; 
+  left: 538px; 
 }
 
 .catalog__rectangle-left {
   bottom: 55px;
-  left: 640px; 
+  right: 523px;
 }
 
 @media (max-width: $max-tablet-width) {
