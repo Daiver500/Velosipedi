@@ -11,7 +11,6 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
-const uglify = require("gulp-uglify");
 const posthtml = require("gulp-posthtml");
 const include = require("posthtml-include");
 
