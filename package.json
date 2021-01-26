@@ -1,5 +1,5 @@
 {
-"name": "velosipedi",
+  "name": "velosipedi",
   "private": true,
   "description": "Личный проект Велосипеды",
   "devDependencies": {

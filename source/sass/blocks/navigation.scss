@@ -1,5 +1,10 @@
 .navigation {
   margin-top: 21px;
+  position: relative;
+}
+
+.navigation__inner {
+  width: 1024px;
 }
 
 .navigation__logo {
@@ -43,12 +48,20 @@
 
 .navigation__destinations {
   list-style: none;
-  display: flex;
+  display: grid;
   margin-top: 0;
   margin-bottom: 0;
   position: relative;
   padding-left: 0;
-  justify-content: center;
+  grid-template-columns: min-content min-content min-content min-content;
+  position: absolute;
+  left: 66.5%;
+  transform: translateX(-50%);
+  max-width: 960px;
+}
+
+.navigation__item {
+  white-space: nowrap;
 }
 
 .navigation__destinations::after {
