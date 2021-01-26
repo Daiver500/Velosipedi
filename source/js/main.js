@@ -12,6 +12,11 @@ const navigationButtons = document.querySelectorAll(`.navigation__button`)
 
 navigationToggleOpen.classList.remove(`hidden`);
 
+if (mainFormName.value === ``) {
+  mainFormName.setCustomValidity(`Введите ваше имя`);
+}
+mainFormName.reportValidity();
+
 
 mainFormName.addEventListener(`input`, function () {
   if (mainFormName.value === ``) {
