@@ -48,23 +48,6 @@ navigationButtons.forEach((button) => {
   button.addEventListener("click", navigationButtonClickHandler)
 });
 
-
-/*navigationButtonAbout.addEventListener("click", function(){
-  about.scrollIntoView({behavior: "smooth"});
-})
-
-navigationButtonCatalog.addEventListener("click", function(){
-  catalog.scrollIntoView({behavior: "smooth"});
-})
-
-navigationButtonVideo.addEventListener("click", function(){
-  video.scrollIntoView({behavior: "smooth"});
-})
-
-navigationButtonContacts.addEventListener("click", function(){
-  footerHeader.scrollIntoView({behavior: "smooth"});
-})*/
-
 const navigationClose = () => {
   navigationMenu.classList.add(`hidden`);
   navigationToggleClose.classList.add(`hidden`);
