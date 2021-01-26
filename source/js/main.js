@@ -1,7 +1,3 @@
-const navigationButtonAbout = document.querySelector(".navigation__button-about");
-const navigationButtonCatalog = document.querySelector(".navigation__button-catalog");
-const navigationButtonVideo = document.querySelector(".navigation__button-video");
-const navigationButtonContacts = document.querySelector(".navigation__button-contacts");
 const about = document.querySelector(".about");
 const catalog = document.querySelector(".catalog");
 const video = document.querySelector(".video");
@@ -10,6 +6,7 @@ const navigationToggleClose = document.querySelector(".navigation__toggle-close"
 const navigationToggleOpen = document.querySelector(".navigation__toggle-open")
 const navigationMenu = document.querySelector(".navigation__destinations")
 const mainFormName = document.querySelector(".main__form-name");
+const navigationButtons = document.querySelectorAll(".navigation__button")
 
 navigationToggleOpen.classList.remove("hidden");
 
@@ -23,8 +20,29 @@ mainFormName.addEventListener("input", function () {
   mainFormName.reportValidity();
 });
 
+const navigationButtonClickHandler = (evt) => {
+     switch (evt.target.id) {
+      case `button-about`:
+      about.scrollIntoView({behavior: "smooth"});
+      break;
+      case "button-catalog":
+      catalog.scrollIntoView({behavior: "smooth"});
+      break;
+      case `button-video`:
+      video.scrollIntoView({behavior: "smooth"});
+      break;
+      case `button-contacts`:
+        footerHeader.scrollIntoView({behavior: "smooth"});
+      break;
+    }
+  }
 
-navigationButtonAbout.addEventListener("click", function(){
+  navigationButtons.forEach((button) => {
+    button.addEventListener("click", navigationButtonClickHandler)
+  });
+
+
+/*navigationButtonAbout.addEventListener("click", function(){
   about.scrollIntoView({behavior: "smooth"});
 })
 
@@ -38,7 +56,7 @@ navigationButtonVideo.addEventListener("click", function(){
 
 navigationButtonContacts.addEventListener("click", function(){
   footerHeader.scrollIntoView({behavior: "smooth"});
-})
+})*/
 
 const navigationClose = () => {
   navigationMenu.classList.add("hidden");
