@@ -11,14 +11,14 @@
         <link rel="stylesheet" href="css/style.min.css" />
     </head>
     <body class="page">
-      <div class="include">
+       <div class="include">
         <include  class="include" src="build/img/sprite.svg"></include>
       </div>
          <header class="page-header">
-            <nav class="navigation">
+             <nav class="navigation">
                  <div class="navigation__inner container">
                     <div class="navigation__buttons">
-                        <a class="navigation__logo" href="#">
+                        <a class="navigation__logo">
                             <svg class="navigation__logo-svg" width="68" height="21" viewBox="0 0 68 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M13.3636 0V20.0455H10.0705V5.82273L8.97273 7.20682L6.825 9.975L6.72954 10.0705L6.58636 9.975L4.43864 7.20682L3.34091 5.775V20.0455H0V0H3.34091L6.72954 4.29545L10.0705 0H13.3636Z" fill="#0AD9C6"/>
                                 <path d="M8.30444 10.0704L8.20898 9.97498L8.30444 10.0704Z" fill="#0AD9C6"/>
@@ -36,7 +36,7 @@
                                 <use xlink:href="#icon-menu-button"></use>
                               </svg>
                             </button>
-                            <button class="navigation__toggle navigation__toggle-close" type="button">
+                            <button class="navigation__toggle navigation__toggle-close hidden" type="button">
                                 <svg width="24" height="25">
                                   <use xlink:href="#icon-close-button"></use>
                                 </svg>
@@ -44,7 +44,7 @@
                         </div>
                     </div>
                     <div>
-                        <ul class="navigation__destinations">
+                        <ul class="navigation__destinations hidden">
                             <li class="navigation__item"><button type="button" class="navigation__button navigation__button-about" >О нас</button></li>
                             <li class="navigation__item"><button type="button" class="navigation__button navigation__button-catalog" >Виды велосипедов</button></li>
                             <li class="navigation__item"><button type="button" class="navigation__button navigation__button-video" >Видео про велосипеды</button></li>
@@ -74,6 +74,17 @@
                     </form>
                   </div>
                 </div>
+            </section>
+            <section class="main-tablet">
+                <div class="main-tablet__form container">
+                    <form class="main-tablet__data" action="https://echo.htmlacademy.ru/" method="post">
+                      <div class="main-tablet__information">
+                        <p class="main-tablet__header">Заполните поля ниже и мы подберем велосипед вашей мечты</p>
+                        <input class="main-tablet__name" pattern="^[A-Za-zА-Яа-яЁё\s]+$"  type="text" name="text" id="name" placeholder="Введите ваше имя" />
+                        <input class="main-tablet__phone" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" type="text" name="telephone" id="phone" placeholder="+7 Введите 10 цифр номера" required/>
+                        <button class="main-tablet__button button" type="submit">Подобрать велосипед мечты</button>
+                      </div>
+                    </form>
             </section>
             <section class="about">
                 <h2 class="visually-hidden">О нас</h2>

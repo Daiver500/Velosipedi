@@ -4,13 +4,13 @@
 }
 
 .navigation__inner {
-  width: 1024px;
+  padding: 0;
 }
 
 .navigation__logo {
   position: absolute;
-  top: 295px;
-  left: 270px;
+  top: 317px;
+  left: 274px;
 }
 
 .navigation__toggles {
@@ -55,22 +55,28 @@
   padding-left: 0;
   grid-template-columns: min-content min-content min-content min-content;
   position: absolute;
-  left: 66.5%;
+  left: 49.5%;
   transform: translateX(-50%);
   max-width: 960px;
+  padding-top: 21px;
 }
 
 .navigation__item {
   white-space: nowrap;
 }
 
+.navigation__button:hover,
+.navigation__button:focus {
+  color: $hover;
+}
+
 .navigation__destinations::after {
   content: "";
   position: absolute;
-  bottom: -9px;
-  left: 270px;
-  right: 0;
-  max-width: 875px;
+  bottom: -8px;
+  left: -19px;
+  right: -20px;
+  max-width: 930px;
   border-bottom: 1px solid $border;
 }
 
@@ -102,7 +108,7 @@
 
   .navigation__logo {
     position: relative;
-    top: 13px;
+    top: 9px;
     left: 8px;
     padding-left: 15px;
     padding-top: 10px;
@@ -127,6 +133,11 @@
   .navigation__destinations {
     position: relative;
     flex-direction: column;
+    display: flex;
+    left: 0; 
+    transform: translateX(0); 
+    max-width: 1023px;
+    height: 100vh;
   }
 
   .navigation__item {
@@ -183,7 +194,11 @@
 
 @media (max-width: $max-mobile-width) {
   .navigation__logo {
-    top: 8px;
+    top: 10px;
     left: 4px;
+  }
+
+  .navigation__destionations {
+    max-width: 767px;
   }
 }

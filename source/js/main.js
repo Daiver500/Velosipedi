@@ -9,6 +9,19 @@ const footerHeader = document.querySelector(".footer__header");
 const navigationToggleClose = document.querySelector(".navigation__toggle-close")
 const navigationToggleOpen = document.querySelector(".navigation__toggle-open")
 const navigationMenu = document.querySelector(".navigation__destinations")
+const mainFormName = document.querySelector(".main__form-name");
+
+navigationToggleOpen.classList.remove("hidden");
+
+
+mainFormName.addEventListener("input", function () {
+  if (mainFormName.value === ``) {
+    mainFormName.setCustomValidity(`Введите ваше имя`);
+  } else {
+    mainFormName.setCustomValidity(``);
+  }
+  mainFormName.reportValidity();
+});
 
 
 navigationButtonAbout.addEventListener("click", function(){

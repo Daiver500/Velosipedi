@@ -1,7 +1,7 @@
 .catalog {
   background-color: $light-grey;
-  padding-top: 240px;
-  padding-bottom: 130px;
+  padding-top: 144px;
+  padding-bottom: 138px;
 }
 
 .catalog__inner {
@@ -22,7 +22,8 @@
   margin: 0;
   display: flex;
   text-align: center;
-  padding: 0 120px;
+  padding-left: 120px;
+  padding-right: 141px;
 }
 
 .catalog__link {
@@ -30,6 +31,11 @@
   line-height: 34px;
   font-weight: 600;
   margin-top: 20px;
+}
+
+.catalog__link:hover,
+.catalog__link:focus {
+  color: $hover-catalog;
 }
 
 .catalog__item:not(:last-child) {
@@ -46,7 +52,7 @@
 }
 
 .catalog__image {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .catalog__bigellipse-tablet,
@@ -60,13 +66,13 @@
 }
 
 .catalog__smallellipse-desktop {
-  top: 57px;
-  right: 119px;
+  top: 58px;
+  right: 125px;
 }
 
 .catalog__bigellipse-desktop {
-  top: 250px;
-  left: 102px;
+  top: 254px;
+  left: 94px;
 }
 
 .catalog__rectangle-right,
@@ -76,12 +82,12 @@
 
 .catalog__rectangle-right {
   top: 112px;
-  left: 538px;
+  left: 527px;
 }
 
 .catalog__rectangle-left {
-  bottom: 55px;
-  right: 523px;
+  bottom: 42px;
+  right: 529px;
 }
 
 @media (max-width: $max-tablet-width) {
@@ -99,8 +105,12 @@
   }
 
   .catalog {
-    padding-top: 40px;
-    padding-bottom: 62px;
+    padding-top: 49px;
+    padding-bottom: 71px;
+  }
+
+  .catalog__link {
+    margin-top: 15px;
   }
 
   .catalog__list {
@@ -108,9 +118,9 @@
   }
 
   .catalog__title {
-    font-size: 22px;
-    line-height: 34px;
-    margin-bottom: 34px;
+    font-size: 24px;
+    line-height: 41px;
+    margin-bottom: 30px;
   }
 
   .catalog__list {
@@ -157,7 +167,7 @@
 
 @media (max-width: $max-mobile-width) {
   .catalog {
-    padding-bottom: 31px;
+    padding-bottom: 53px;
   }
 
   .catalog__list {
@@ -170,13 +180,17 @@
     margin-bottom: 30px;
   }
 
+  .catalog__link {
+    margin-top: 12px;
+  }
+
   .catalog__smallellipse-tablet {
-    top: 833px;
-    left: 245px;
+    top: 846px;
+    left: 241px;
   }
 
   .catalog__bigellipse-tablet {
-    top: 262px;
+    top: 274px;
     left: 2px;
   }
 }

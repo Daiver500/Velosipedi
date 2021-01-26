@@ -9,6 +9,31 @@ const footerHeader = document.querySelector(".footer__header");
 const navigationToggleClose = document.querySelector(".navigation__toggle-close")
 const navigationToggleOpen = document.querySelector(".navigation__toggle-open")
 const navigationMenu = document.querySelector(".navigation__destinations")
+const mainFormName = document.querySelector(".main__form-name");
+const NAMES = /^#([а-яА-Я]|[a-zA-Z]|)$/;
+
+navigationToggleOpen.classList.remove("hidden");
+
+const namesInputHandler = (evt) => {
+  const {target: mainFormName} = evt;
+  const namesArr = mainFormName.value;
+
+  const isNameCorrect = namesArr.every((tag) => {
+    return NAMES.test(tag);
+  });
+
+  hashtagsInput.setCustomValidity(``);
+
+  if (!isNameCorrect) {
+    mainFormName.setCustomValidity("No");
+  }
+  hashtagsInput.reportValidity();
+
+  if (hashtagsInput.value === ``) {
+    hashtagsInput.setCustomValidity(`No2`);
+  }
+};
+namesInputHandler()
 
 
 navigationButtonAbout.addEventListener("click", function(){

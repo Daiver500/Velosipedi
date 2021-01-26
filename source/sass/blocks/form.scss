@@ -1,10 +1,7 @@
 .main__inner {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 330px;
-  padding-top: 175px;
-  padding-right: 190px;
-  padding-left: 191px;
+  padding: 175px 190px 239px 191px;
 }
 
 .main__header {
@@ -15,8 +12,12 @@
 }
 
 .main__form {
-  width: 330px;
+  width: 353px;
   margin-top: 152px;
+}
+
+.main-tablet {
+  display: none;
 }
 
 .main__title,
@@ -62,14 +63,10 @@
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
-}
-
-.main__form-name,
-.main__form-phone {
-  min-width: 326px;
-  padding: 10px 10px;
   border-radius: 5px;
   border: 1px solid $border-color;
+  min-width: 326px;
+  padding: 10px 10px;
 }
 
 .main__form-button {
@@ -81,6 +78,16 @@
   background-color: $button-color;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.main__form-button:hover,
+.main__form-button:focus {
+  background-color: $hover;
+}
+
+.main__form-information {
+  padding-left: 10px;
 }
 
 @media (max-width: $max-tablet-width) {
@@ -92,19 +99,39 @@
     flex-direction: column;
     align-items: center;
     padding-top: 5px;
-    padding-bottom: 74px;
+    padding-bottom: 80px;
+  }
+
+  .main-tablet {
+    background-color: $white;
+    padding-top: 20px;
+    padding-bottom: 71px;
+  }
+
+  .main-tablet__data {
+    padding: 0px 161px;
   }
 
   .main__form {
-    margin-top: 149px;
+    display: none;
   }
 
-  .main__form-header {
+  .main-tablet__form {
+    display: block;
+    margin-top: 50px;
+    padding: 0 50px;
+    text-align: center;
+  }
+
+  .main-tablet__header {
     font-size: 18px;
     margin-bottom: 30px;
-    max-width: 330px;
     text-align: center;
     color: $black;
+    line-height: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0;
   }
 
   .main__header {
@@ -118,6 +145,7 @@
     margin-top: 0;
     font-size: 30px;
     line-height: 42px;
+    margin-bottom: 21px;
   }
 
   .main__text {
@@ -125,13 +153,33 @@
     min-width: 435px;
   }
 
-  .main__form-name,
-  .main__form-phone {
-    padding: 10px 10px;
+  .main-tablet__name,
+  .main-tablet__phone {
+    margin-bottom: 22px;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 1px solid #c9ccd4;
+    min-width: 322px;
+    padding: 10px 21px;
+}
+
+  .main-tablet__button {
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 600;
+    color: $black;
+    padding: 15px 48px;
+    background-color: $button-color;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
   }
 
-  .main__form-button {
-    padding: 15px 54px;
+  .main-tablet__button:hover,
+  .main-tablet__button:focus {
+    background-color: $hover;
   }
 }
 
@@ -143,9 +191,17 @@
     padding-left: 0;
   }
 
-  .main__form {
-    width: 320px;
-    margin-top: 134px;
+  .main-tablet {
+    min-width: 320px;
+    margin-top: 0;
+  }
+
+  .main-tablet__data {
+    padding: 0 0;
+  }
+
+  .main-tablet__form {
+    padding: 0 10px;
   }
 
   .main__header {
@@ -154,7 +210,7 @@
     margin-top: 0;
   }
 
-  .main__form-information {
+  .main-tablet__information {
     display: flex;
     flex-direction: column;
     min-width: 290px;
@@ -165,18 +221,19 @@
     min-width: 300px;
   }
 
-  .main__form-header {
-    margin-bottom: 20px;
+  .main-tablet__header {
+    margin-bottom: 19px;
     padding: 0 10px;
   }
 
-  .main__form-name,
-  .main__form-phone {
+  .main-tablet__name,
+  .main-tablet__phone {
     min-width: 290px;
-    padding: 12px 10px;
+    padding: 12px 27px;
+    margin-bottom: 18px;
   }
 
-  .main__form-button {
+  .main-tablet__button {
     padding: 14px 35px;
   }
 }

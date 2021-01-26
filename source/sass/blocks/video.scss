@@ -9,7 +9,7 @@
 
 .video__image {
   position: absolute;
-  left: -14%;
+  left: -15%;
   transform: translateX(50%);
   top: 111%;
 }
@@ -19,7 +19,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 110px;
-  padding-right: 305px;
+  padding-right: 326px;
   padding-left: 305px;
   text-align: center;
 }
@@ -52,10 +52,16 @@
   border-radius: 50%;
   display: inline-flex;
   position: absolute;
-  left: 46%;
+  left: 45%;
   transform: translateX(50%);
   top: 200%;
   display: flex;
+  cursor: pointer;
+}
+
+.video__button:hover,
+.video__button:focus {
+  background-color: $hover;
 }
 
 .video__button-svg {
@@ -104,8 +110,8 @@
   }
 
   .video__header {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 12px;
+    padding-left: 11px;
     padding-top: 85px;
   }
 
