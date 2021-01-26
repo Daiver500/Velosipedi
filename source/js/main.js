@@ -21,17 +21,17 @@ mainFormName.addEventListener("input", function () {
 });
 
 const navigationButtonClickHandler = (evt) => {
-     switch (evt.target.id) {
-      case `button-about`:
+  switch (evt.target.id) {
+    case `button-about`:
       about.scrollIntoView({behavior: "smooth"});
       break;
-      case "button-catalog":
+    case "button-catalog":
       catalog.scrollIntoView({behavior: "smooth"});
       break;
-      case `button-video`:
+    case `button-video`:
       video.scrollIntoView({behavior: "smooth"});
       break;
-      case `button-contacts`:
+    case `button-contacts`:
         footerHeader.scrollIntoView({behavior: "smooth"});
       break;
     }
