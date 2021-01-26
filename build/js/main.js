@@ -12,13 +12,13 @@ const navigationButtons = document.querySelectorAll(`.navigation__button`)
 
 navigationToggleOpen.classList.remove(`hidden`);
 
-//if (mainFormName.value === ``) {
-  //mainFormName.setCustomValidity(`Введите ваше имя`);
-//}
-//mainFormName.reportValidity();
+if (mainFormName.value === ``) {
+  mainFormName.setCustomValidity(`Введите ваше имя`);
+}
+mainFormName.reportValidity();
 
 
-mainFormName.addEventListener(`change`, function () {
+mainFormName.addEventListener(`input`, function () {
   if (mainFormName.value === ``) {
     mainFormName.setCustomValidity(`Введите ваше имя`);
   } else {
