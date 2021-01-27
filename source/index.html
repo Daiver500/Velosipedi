@@ -29,12 +29,12 @@
 							<rect x="37" y="3" width="6" height="4" /> </svg>
 					</a>
 					<div class="navigation__toggles">
-						<button class="navigation__toggle navigation__toggle-open hidden" type="button">
+						<button class="navigation__toggle navigation__toggle-open hidden aria-label="Open"" type="button">
 							<svg width="30" height="30">
 								<use xlink:href="#icon-menu-button"></use>
 							</svg>
 						</button>
-						<button class="navigation__toggle navigation__toggle-close hidden" type="button">
+						<button class="navigation__toggle navigation__toggle-close hidden aria-label="Close"" type="button">
 							<svg width="24" height="25">
 								<use xlink:href="#icon-close-button"></use>
 							</svg>
@@ -44,16 +44,16 @@
 				<div class="navigation__menu">
 					<ul class="navigation__destinations hidden">
 						<li class="navigation__item">
-							<a id="button-about"  class="navigation__button">О нас</a>
+							<a id="button-about"  class="navigation__button" aria-label="About us">О нас</a>
 						</li>
 						<li class="navigation__item">
-							<a id="button-catalog"  class="navigation__button">Виды велосипедов</a>
+							<a id="button-catalog"  class="navigation__button" aria-label="Catalog">Виды велосипедов</a>
 						</li>
 						<li class="navigation__item">
-							<a id="button-video"  class="navigation__button">Видео про велосипеды</a>
+							<a id="button-video"  class="navigation__button" aria-label="Video">Видео про велосипеды</a>
 						</li>
 						<li class="navigation__item">
-							<a id="button-contacts"  class="navigation__button">Контакты</a>
+							<a id="button-contacts"  class="navigation__button" aria-label="Contacts">Контакты</a>
 						</li>
 					</ul>
 				</div>
@@ -189,7 +189,7 @@
 					<source media="(max-width:767px)" srcset="img/map-mobile.jpg" />
 					<source media="(max-width:1023px)" srcset="img/map-tablet.jpg" /> <img class="footer__image" src="img/map-desktop.jpg" alt="Видео о велосипедах" /> </picture>
 			</div>
-			<div class="footer__contacts"> <a class="footer__link footer__link-mail" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a> <a class="footer__link footer__link-tel" href="tel:+74998468446">+7 (499)-784-684-46</a> </div>
+			<div class="footer__contacts"> <a class="footer__link footer__link-mail" href="mailto:puteshestviemechta@gmail.ru" aria-label="mail">puteshestviemechta@gmail.ru</a> <a class="footer__link footer__link-tel" href="tel:+74998468446" aria-label="phone">+7 (499)-784-684-46</a> </div>
 		</section>
 	</footer>
 	<script src="js/main.js"></script>
