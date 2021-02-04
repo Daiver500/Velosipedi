@@ -6,6 +6,7 @@
 
 .catalog__inner {
   position: relative;
+  max-width: 1024px;
 }
 
 .catalog__title {
@@ -20,10 +21,12 @@
 .catalog__list {
   list-style: none;
   margin: 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
-  padding-left: 120px;
-  padding-right: 141px;
+  padding: 0;
+  //padding-left: 120px;
+  //padding-right: 141px;
 }
 
 .catalog__link {
@@ -115,6 +118,7 @@
 
   .catalog__list {
     padding: 0px 90px;
+    display: flex;
   }
 
   .catalog__title {

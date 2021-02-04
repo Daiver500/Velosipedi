@@ -1,7 +1,7 @@
 .container {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 10px 10px;
+  //padding: 10px 10px;
 }
 
 @media (max-width: $max-tablet-width) {
