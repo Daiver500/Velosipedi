@@ -14,12 +14,13 @@ const navigationButtons = document.querySelectorAll(`.navigation__button`);
 navigationMenu.classList.add(`hidden`);
 navigationToggleOpen.classList.remove(`hidden`);
 
-if (!navigationMenu.classList.contains(`hidden`)) {
-  document.body.classList.add(`noscroll`)
-} else {
-  document.body.classList.remove(`noscroll`)
+сonst removeScroll = () => {
+  if (!navigationMenu.classList.contains(`hidden`)) {
+    document.body.classList.add(`noscroll`)
+  } else {
+    document.body.classList.remove(`noscroll`)
+  }
 }
-
 
 if (mainFormName.value === ``) {
   mainFormName.setCustomValidity(`Введите ваше имя`);
@@ -59,7 +60,6 @@ const navigationButtonClickHandler = (evt) => {
         footerHeader.scrollIntoView({behavior: `smooth`});
       break;
   }
-  console.log(evt.target.id)
 }
 
 navigationButtons.forEach((button) => {
