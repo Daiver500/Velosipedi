@@ -69,14 +69,14 @@
 }
 
 .footer__link:not(:last-child) {
-  margin-right: 140px;
+  margin-right: 117px;
 }
 
 .footer__link-mail::before {
   content: "";
   position: absolute;
-  left: -40px;
-  top: 3px;
+  left: -29px;
+  top: 1px;
   background-repeat: no-repeat;
   width: 26px;
   height: 20px;
@@ -86,8 +86,8 @@
 .footer__link-tel::before {
   content: "";
   position: absolute;
-  left: -30px;
-  top: 2px;
+  left: -35px;
+  top: -3px;
   background-repeat: no-repeat;
   width: 22px;
   height: 23px;
