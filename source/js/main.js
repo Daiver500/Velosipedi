@@ -9,23 +9,24 @@ const navigationToggleOpen = document.querySelector(`.navigation__toggle-open`)
 const navigationMenu = document.querySelector(`.navigation__destinations`)
 const mainFormName = document.querySelector(`.main__form-name`);
 const mainFormNameTablet = document.querySelector(`.main-tablet__name`);
-const navigationButtons = document.querySelectorAll(`.navigation__button`)
+const navigationButtons = document.querySelectorAll(`.navigation__button`);
+const body = document.querySelector(`.page`);
 
 navigationMenu.classList.add(`hidden`);
 navigationToggleOpen.classList.remove(`hidden`);
 
+
 if (!navigationMenu.classList.contains(`hidden`)) {
-  const scrollY = document.body.style.top;
-document.body.style.position = '';
-document.body.style.top = '';
-window.scrollTo(0, parseInt(scrollY || '0') * -1);
+  body.classList.add(`noscroll`)
+} else {
+ body.classList.remove(`noscroll`)
 }
+
 
 if (mainFormName.value === ``) {
   mainFormName.setCustomValidity(`Введите ваше имя`);
 }
 mainFormName.reportValidity();
-
 
 mainFormName.addEventListener(`input`, function () {
   if (mainFormName.value === ``) {

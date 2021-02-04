@@ -9,16 +9,22 @@ const navigationToggleOpen = document.querySelector(`.navigation__toggle-open`)
 const navigationMenu = document.querySelector(`.navigation__destinations`)
 const mainFormName = document.querySelector(`.main__form-name`);
 const mainFormNameTablet = document.querySelector(`.main-tablet__name`);
-const navigationButtons = document.querySelectorAll(`.navigation__button`)
+const navigationButtons = document.querySelectorAll(`.navigation__button`);
 
 navigationMenu.classList.add(`hidden`);
 navigationToggleOpen.classList.remove(`hidden`);
+
+if (!navigationMenu.classList.contains(`hidden`)) {
+  document.body.classList.add(`noscroll`)
+} else {
+  document.body.classList.remove(`noscroll`)
+}
+
 
 if (mainFormName.value === ``) {
   mainFormName.setCustomValidity(`Введите ваше имя`);
 }
 mainFormName.reportValidity();
-
 
 mainFormName.addEventListener(`input`, function () {
   if (mainFormName.value === ``) {
@@ -57,7 +63,7 @@ const navigationButtonClickHandler = (evt) => {
 }
 
 navigationButtons.forEach((button) => {
-  button.addEventListener("click", navigationButtonClickHandler)
+  button.addEventListener(`click`, navigationButtonClickHandler)
 });
 
 const navigationClose = () => {
@@ -73,6 +79,5 @@ const navigationOpen = () => {
 }
 
 navigationToggleClose.addEventListener(`click`, navigationClose);
-
 navigationToggleOpen.addEventListener(`click`, navigationOpen);
 })();
