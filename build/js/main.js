@@ -14,14 +14,6 @@ const navigationButtons = document.querySelectorAll(`.navigation__button`);
 navigationMenu.classList.add(`hidden`);
 navigationToggleOpen.classList.remove(`hidden`);
 
-сonst removeScroll = () => {
-  if (!navigationMenu.classList.contains(`hidden`)) {
-    document.body.classList.add(`noscroll`)
-  } else {
-    document.body.classList.remove(`noscroll`)
-  }
-}
-
 if (mainFormName.value === ``) {
   mainFormName.setCustomValidity(`Введите ваше имя`);
 }
@@ -68,12 +60,14 @@ navigationButtons.forEach((button) => {
 
 const navigationClose = () => {
   navigationMenu.classList.add(`hidden`);
+  document.body.classList.remove(`noscroll`)
   navigationToggleClose.classList.add(`hidden`);
   navigationToggleOpen.classList.remove(`hidden`);
 }
 
 const navigationOpen = () => {
   navigationMenu.classList.remove(`hidden`);
+  document.body.classList.add(`noscroll`)
   navigationToggleClose.classList.remove(`hidden`);
   navigationToggleOpen.classList.add(`hidden`);
 }
