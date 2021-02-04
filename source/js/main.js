@@ -8,9 +8,18 @@ const navigationToggleClose = document.querySelector(`.navigation__toggle-close`
 const navigationToggleOpen = document.querySelector(`.navigation__toggle-open`)
 const navigationMenu = document.querySelector(`.navigation__destinations`)
 const mainFormName = document.querySelector(`.main__form-name`);
+const mainFormNameTablet = document.querySelector(`.main-tablet__name`);
 const navigationButtons = document.querySelectorAll(`.navigation__button`)
 
+navigationMenu.classList.add(`hidden`);
 navigationToggleOpen.classList.remove(`hidden`);
+
+if (!navigationMenu.classList.contains(`hidden`)) {
+  const scrollY = document.body.style.top;
+document.body.style.position = '';
+document.body.style.top = '';
+window.scrollTo(0, parseInt(scrollY || '0') * -1);
+}
 
 if (mainFormName.value === ``) {
   mainFormName.setCustomValidity(`Введите ваше имя`);
@@ -25,6 +34,15 @@ mainFormName.addEventListener(`input`, function () {
     mainFormName.setCustomValidity(``);
   }
   mainFormName.reportValidity();
+});
+
+mainFormNameTablet.addEventListener(`input`, function () {
+  if (mainFormNameTablet.value === ``) {
+    mainFormNameTablet.setCustomValidity(`Введите ваше имя`);
+  } else {
+    mainFormNameTablet.setCustomValidity(``);
+  }
+  mainFormNameTablet.reportValidity();
 });
 
 const navigationButtonClickHandler = (evt) => {
@@ -42,10 +60,11 @@ const navigationButtonClickHandler = (evt) => {
         footerHeader.scrollIntoView({behavior: `smooth`});
       break;
   }
+  console.log(evt.target.id)
 }
 
 navigationButtons.forEach((button) => {
-  button.addEventListener("click", navigationButtonClickHandler)
+  button.addEventListener(`click`, navigationButtonClickHandler)
 });
 
 const navigationClose = () => {
@@ -61,6 +80,5 @@ const navigationOpen = () => {
 }
 
 navigationToggleClose.addEventListener(`click`, navigationClose);
-
 navigationToggleOpen.addEventListener(`click`, navigationOpen);
 })();

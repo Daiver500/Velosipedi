@@ -8,8 +8,10 @@ const navigationToggleClose = document.querySelector(`.navigation__toggle-close`
 const navigationToggleOpen = document.querySelector(`.navigation__toggle-open`)
 const navigationMenu = document.querySelector(`.navigation__destinations`)
 const mainFormName = document.querySelector(`.main__form-name`);
+const mainFormNameTablet = document.querySelector(`.main-tablet__name`);
 const navigationButtons = document.querySelectorAll(`.navigation__button`)
 
+navigationMenu.classList.add(`hidden`);
 navigationToggleOpen.classList.remove(`hidden`);
 
 if (mainFormName.value === ``) {
@@ -27,6 +29,15 @@ mainFormName.addEventListener(`input`, function () {
   mainFormName.reportValidity();
 });
 
+mainFormNameTablet.addEventListener(`input`, function () {
+  if (mainFormNameTablet.value === ``) {
+    mainFormNameTablet.setCustomValidity(`Введите ваше имя`);
+  } else {
+    mainFormNameTablet.setCustomValidity(``);
+  }
+  mainFormNameTablet.reportValidity();
+});
+
 const navigationButtonClickHandler = (evt) => {
   switch (evt.target.id) {
     case `button-about`:
@@ -42,6 +53,7 @@ const navigationButtonClickHandler = (evt) => {
         footerHeader.scrollIntoView({behavior: `smooth`});
       break;
   }
+  console.log(evt.target.id)
 }
 
 navigationButtons.forEach((button) => {
