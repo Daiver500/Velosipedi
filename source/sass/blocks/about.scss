@@ -60,7 +60,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 0px 90px;
+    padding: 0px 94px;
+    gap: 0;
+    letter-spacing: -0.5px;
   }
 
   .about__item:not(:last-child) {

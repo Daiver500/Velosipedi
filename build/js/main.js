@@ -15,10 +15,12 @@ const body = document.querySelector(`.page`);
 navigationMenu.classList.add(`hidden`);
 navigationToggleOpen.classList.remove(`hidden`);
 
-if (mainFormName.value === ``) {
-  mainFormName.setCustomValidity(`Введите ваше имя`);
-}
-mainFormName.reportValidity();
+//if (mainFormName.value === `` && mainFormNameTablet === ``) {
+  //mainFormName.setCustomValidity(`Введите ваше имя`);
+  //mainFormNameTablet.setCustomValidity(`Введите ваше имя`);
+//}
+//mainFormName.reportValidity();
+//mainFormNameTablet.reportValidity();
 
 mainFormName.addEventListener(`input`, function () {
   if (mainFormName.value === ``) {

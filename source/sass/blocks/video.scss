@@ -93,17 +93,25 @@
 
   .video__image {
     top: 110%;
+    left: 50%;
   }
 
   .video__button {
-    left: 39%;
+    left: 38%;
     top: 159%;
     min-width: 90px;
     height: 90px;
   }
 
   .video__text {
-    padding: 0 15px;
+    padding: 0;
+    max-width: 425px;
+    text-align: center;
+  }
+
+  .video__button-svg {
+    width: 18px;
+    height: 25px;
   }
 }
 
@@ -117,9 +125,9 @@
   }
 
   .video__header {
-    padding-right: 12px;
-    padding-left: 11px;
-    padding-top: 85px;
+    padding-right: 11px;
+    padding-left: 1px;
+    padding-top: 83px;
   }
 
   .video__image {
