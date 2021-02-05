@@ -10,7 +10,6 @@ const navigationMenu = document.querySelector(`.navigation__destinations`)
 const mainFormName = document.querySelector(`.main__form-name`);
 const mainFormNameTablet = document.querySelector(`.main-tablet__name`);
 const navigationButtons = document.querySelectorAll(`.navigation__button`);
-const body = document.querySelector(`.page`);
 
 navigationMenu.classList.add(`hidden`);
 navigationToggleOpen.classList.remove(`hidden`);
