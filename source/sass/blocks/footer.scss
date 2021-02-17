@@ -1,6 +1,6 @@
 .footer {
   padding-bottom: 100px;
-  padding-top: 249px;
+  padding-top: 251px;
   position: relative;
 }
 
@@ -28,14 +28,15 @@
   margin-bottom: 43px;
   margin-top: 0;
   opacity: 0.7;
-  max-width: 445px;
+  max-width: 545px;
   text-align: center;
+  word-spacing: 7px;
 }
 
 .footer__map {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 .footer__contacts {
@@ -62,7 +63,6 @@
   line-height: 29px;
 }
 
-
 .footer__link-mail,
 .footer__link-tel {
   position: relative;
@@ -75,7 +75,7 @@
 .footer__link-mail::before {
   content: "";
   position: absolute;
-  left: -29px;
+  left: -44px;
   top: 1px;
   background-repeat: no-repeat;
   width: 26px;
@@ -86,7 +86,7 @@
 .footer__link-tel::before {
   content: "";
   position: absolute;
-  left: -35px;
+  left: -26px;
   top: -3px;
   background-repeat: no-repeat;
   width: 22px;
@@ -111,6 +111,12 @@
     padding-top: 160px;
   }
 
+  .footer__contacts {
+    padding-right: 75px;
+    padding-left: 145px;
+    justify-content: start;
+  }
+
   .footer__title,
   .footer__text,
   .footer__map {
@@ -125,6 +131,7 @@
 
   .footer__text {
     max-width: 645px;
+    word-spacing: 5px;
   }
 
   .footer iframe {
@@ -138,7 +145,21 @@
   }
 
   .footer__map {
-    margin-bottom: 18px;
+    margin-bottom: 14px;
+  }
+
+  .footer__link:not(:last-child) {
+    margin-right: 127px;
+  }
+
+  .footer__link-mail::before {
+    left: -42px;
+    top: 1px;
+  }
+
+  .footer__link-tel::before {
+    left: -34px;
+    top: -3px;
   }
 }
 
@@ -152,6 +173,12 @@
     padding-right: 25px;
   }
 
+  .footer__contacts {
+    padding-right: 0;
+    padding-left: 0;
+    justify-content: start;
+  }
+
   .footer__title {
     font-size: 18px;
   }
@@ -162,7 +189,7 @@
   }
 
   .footer__map {
-    margin-bottom: 22px;
+    margin-bottom: 17px;
     padding-right: 0;
     padding-left: 0;
   }
@@ -180,15 +207,23 @@
     margin-bottom: 22px;
   }
 
-  .footer__link-mail,
-  .footer__link-tel {
-    padding-right: 45px;
-    padding-left: 45px;
+  .footer__link-mail {
+    padding-right: 14px;
+    padding-left: 63px;
   }
 
-  .footer__link-mail::before,
+   .footer__link-tel {
+    padding-right: 14px;
+    padding-left: 37px;
+  }
+
+
+  .footer__link-mail::before {
+    left: 22px;
+  }
+
   .footer__link-tel::before {
-    left: 10px;
+    left: 0;
   }
 
   .footer iframe {

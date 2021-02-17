@@ -9,19 +9,19 @@
 
 .video__image {
   position: absolute;
-  left: 50%;
+  left: 49.5%;
   transform: translateX(-50%);
-  top: 116%;
+  top: 115%;
 }
 
 .video__header {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  //align-items: center;
   padding-top: 123px;
   //padding-right: 326px;
   //padding-left: 305px;
-  text-align: center;
+  //text-align: center;
 }
 
 .video__title,
@@ -31,10 +31,12 @@
 }
 
 .video__title {
-  margin-bottom: 17px;
+  margin-bottom: 19px;
   font-size: 30px;
   line-height: 30px;
   font-weight: 600;
+  max-width: 1400px;
+  text-align: center;
 }
 
 .video__text {
@@ -42,7 +44,9 @@
   font-size: 16px;
   line-height: 28px;
   font-weight: 300;
-  max-width: 321px;
+  max-width: 331px;
+    /* text-align: center; */
+  align-self: center;
   //padding: 0 200px;
 }
 
@@ -55,7 +59,7 @@
   position: absolute;
   left: 45%;
   transform: translateX(50%);
-  top: 211%;
+  top: 207%;
   display: flex;
   cursor: pointer;
   border: none;
@@ -89,17 +93,25 @@
 
   .video__image {
     top: 110%;
+    left: 50%;
   }
 
   .video__button {
-    left: 39%;
+    left: 38%;
     top: 159%;
     min-width: 90px;
     height: 90px;
   }
 
   .video__text {
-    padding: 0 15px;
+    padding: 0;
+    max-width: 425px;
+    text-align: center;
+  }
+
+  .video__button-svg {
+    width: 18px;
+    height: 25px;
   }
 }
 
@@ -113,9 +125,9 @@
   }
 
   .video__header {
-    padding-right: 12px;
-    padding-left: 11px;
-    padding-top: 85px;
+    padding-right: 11px;
+    padding-left: 1px;
+    padding-top: 83px;
   }
 
   .video__image {
