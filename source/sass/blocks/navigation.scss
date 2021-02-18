@@ -138,7 +138,8 @@
     left: 0;
     transform: translateX(0);
     max-width: 1023px;
-    height: 102vh;
+    height: 100vh;
+    overflow: scroll;
   }
 
   .navigation__item {
