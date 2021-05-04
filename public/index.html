@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Сайт о велосипедах</title>
+	<meta name="description" content="Велосипеды">
+	<meta name="keywords" content="дорожный велосипед, горный велосипед, детский велосипед">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preload" href="css/style.min.css" as="style">
+	<link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-400.woff2" as="font">
+	<link rel="stylesheet" href="css/style.min.css"> </head>
+<body class="page">
+	<div class="include">
+		<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-close-button" viewBox="0 0 24 25">
+<path d="M1 23.7213L23 1M23 23.7213L1 1" stroke="#141517" stroke-opacity="0.2" stroke-linecap="round" stroke-linejoin="round"></path>
+</symbol><symbol id="icon-menu-button" viewBox="0 0 30 30">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 21H26.25V20H3.75V21ZM3.75 14.75H26.25V13.75H3.75V14.75ZM3.75 7.5V8.5H26.25V7.5H3.75Z" fill="black"></path>
+</symbol></svg>
+	</div>
+	<header class="page-header">
+		<nav class="navigation">
+			<div class="navigation__inner container">
+				<div class="navigation__buttons">
+					<a class="navigation__logo">
+						<svg class="navigation__logo-svg" width="68" height="21" viewBox="0 0 68 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.3636 0V20.0455H10.0705V5.82273L8.97273 7.20682L6.825 9.975L6.72954 10.0705L6.58636 9.975L4.43864 7.20682L3.34091 5.775V20.0455H0V0H3.34091L6.72954 4.29545L10.0705 0H13.3636Z" fill="#0AD9C6"></path>
+							<path d="M8.30444 10.0704L8.20898 9.97498L8.30444 10.0704Z" fill="#0AD9C6"></path>
+							<path d="M8.44787 9.97498L8.35241 10.0704H8.30469L8.44787 9.97498Z" fill="#0AD9C6"></path>
+							<path d="M38.2092 5.61453L29.0823 12.316L31.1955 15.194L40.3224 8.49252L38.2092 5.61453Z" fill="#0AD9C6"></path>
+							<path d="M26.6674 3C22.8035 3 19.6243 6.13028 19.6243 10.0431C19.6243 13.9071 22.7546 17.0863 26.6674 17.0863C30.5313 17.0863 33.7105 13.956 33.7105 10.0431C33.7105 6.17919 30.5313 3 26.6674 3ZM26.6674 13.2712C24.8577 13.2712 23.4393 11.8039 23.4393 10.0431C23.4393 8.23344 24.9066 6.81503 26.6674 6.81503C28.4282 6.81503 29.8955 8.28235 29.8955 10.0431C29.8955 11.8039 28.4282 13.2712 26.6674 13.2712Z" fill="#0AD9C6"></path>
+							<path d="M43.6396 3C39.7756 3 36.5964 6.13028 36.5964 10.0431C36.5964 13.9071 39.7267 17.0863 43.6396 17.0863C47.5035 17.0863 50.6827 13.956 50.6827 10.0431C50.6338 6.17919 47.5035 3 43.6396 3ZM43.6396 13.2712C41.8299 13.2712 40.4115 11.8039 40.4115 10.0431C40.4115 8.23344 41.8788 6.81503 43.6396 6.81503C45.4004 6.81503 46.8677 8.28235 46.8677 10.0431C46.8677 11.8039 45.4004 13.2712 43.6396 13.2712Z" fill="#0AD9C6"></path>
+							<path d="M67.5977 0.238647V20.2841H64.2568V9.87956L61.4409 7.20683L59.3409 5.15456V20.2841H56V0.238647H59.2932H59.3409L63.2545 4.0091L64.2568 4.96365V0.238647H67.5977Z" fill="#0AD9C6"></path>
+							<rect x="37" y="3" width="6" height="4"></rect> </svg>
+					</a>
+					<div class="navigation__toggles">
+						<button class="navigation__toggle navigation__toggle-open hidden" aria-label="Open-button" type="button">
+							<svg width="30" height="30">
+								<use xlink:href="#icon-menu-button"></use>
+							</svg>
+						</button>
+						<button class="navigation__toggle navigation__toggle-close hidden" aria-label="Close-button" type="button">
+							<svg width="24" height="25">
+								<use xlink:href="#icon-close-button"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="navigation__menu">
+					<ul class="navigation__destinations">
+						<li class="navigation__item">
+							<a id="button-about" class="navigation__button" aria-label="About us">О нас</a>
+						</li>
+						<li class="navigation__item">
+							<a id="button-catalog" class="navigation__button" aria-label="Catalog">Виды велосипедов</a>
+						</li>
+						<li class="navigation__item">
+							<a id="button-video" class="navigation__button" aria-label="Video">Видео про велосипеды</a>
+						</li>
+						<li class="navigation__item">
+							<a id="button-contacts" class="navigation__button" aria-label="Contacts">Контакты</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main class="page-content">
+		<section class="main">
+			<div class="main__inner container">
+				<div class="main__header">
+					<h1 class="main__title">Мы продаем велосипеды</h1>
+					<p class="main__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+				</div>
+				<div class="main__form">
+					<form class="main__form-data" action="https://echo.htmlacademy.ru/" method="post">
+						<div class="main__form-information">
+              <p class="main__form-header">Заполните поля ниже и мы подберем велосипед вашей мечты</p>
+              <label class="main__form-label"> <span class="visually-hidden">Имя</span>
+              <input class="main__form-name" pattern="^[A-Za-zА-Яа-яЁё\s]+$" type="text" name="text" placeholder="Введите ваше имя" required="">
+              </label>
+              <label class="main__form-label"> <span class="visually-hidden">Телефон</span>
+              <input class="main__form-phone" pattern="(\+79[0-9]{9}|8[0-9]{10} |^[ 0-9]+$)" type="tel" name="telephone" placeholder="Введите Ваш номер телефона" required="">
+              </label>
+							<button class="main__form-button button" type="submit" aria-label="order button">Подобрать велосипед мечты</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<section class="main-tablet">
+			<div class="main-tablet__form container">
+				<form class="main-tablet__data" action="https://echo.htmlacademy.ru/" method="post">
+					<div class="main-tablet__information">
+            <p class="main-tablet__header">Заполните поля ниже и мы подберем велосипед вашей мечты</p>
+            <label class="main-tablet__label"> <span class="visually-hidden">Имя</span>
+            <input class="main-tablet__name" pattern="^[A-Za-zА-Яа-яЁё\s]+$" type="text" name="text" id="name" placeholder="Введите ваше имя" required="">
+            </label>
+            <label class="main-tablet__label"> <span class="visually-hidden">Телефон</span>
+            <input class="main-tablet__phone" pattern="(\+79[0-9]{9}|8[0-9]{10} |^[ 0-9]+$)" type="text" name="telephone" id="phone" placeholder="Введите Ваш номер телефона" required="">
+            </label>
+						<button class="main-tablet__button button" type="submit" aria-label="order button">Подобрать велосипед мечты</button>
+					</div>
+				</form>
+			</div>
+		</section>
+		<section class="about">
+			<div class="about__inner container">
+				<h2 class="about__title">Несколько фактов о нас</h2>
+				<ul class="about__list">
+					<li class="about__item"> <span class="about__number">01</span>
+						<p class="about__text">Самый широкий выбор велосипедов!</p>
+					</li>
+					<li class="about__item"> <span class="about__number">02</span>
+						<p class="about__text">Доставка велосипедов по всей России!</p>
+					</li>
+					<li class="about__item"> <span class="about__number">03</span>
+						<p class="about__text">Большой выбор крутых аксессуаров!</p>
+					</li>
+					<li class="about__item"> <span class="about__number">04</span>
+						<p class="about__text">Профессиональные консультации!</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="catalog">
+			<div class="catalog__inner container">
+				<h2 class="catalog__title">Виды велосипедов</h2>
+				<svg class="catalog__bigellipse-desktop" width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="90" cy="90" r="76.5" stroke="#0AD9C6" stroke-width="27"></circle> </svg>
+				<svg class="catalog__smallellipse-desktop" width="95" height="95" viewBox="0 0 95 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="47.5" cy="47.5" r="39" stroke="#0AD9C6" stroke-width="17"></circle> </svg>
+				<svg class="catalog__rectangle-right" width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="4" y="4" width="39" height="39" stroke="#0AD9C6" stroke-width="8"></rect> </svg>
+				<svg class="catalog__rectangle-left" width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="4" y="4" width="39" height="39" stroke="#0AD9C6" stroke-width="8"></rect> </svg>
+				<svg class="catalog__bigellipse-tablet" width="127" height="127" viewBox="0 0 127 127" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="63.5" cy="63.5" r="54.5" stroke="#0AD9C6" stroke-width="18"></circle> </svg>
+				<svg class="catalog__smallellipse-tablet" width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="34" cy="34" r="27.5" stroke="#0AD9C6" stroke-width="13"></circle> </svg>
+				<ul class="catalog__list">
+					<li class="catalog__item">
+						<picture class="catalog__picture">
+							<source type="image/webp" media="(max-width:1023px)" srcset="img/standard-bike-tablet.webp, img/standard-bike-tablet@2x.webp 2x">
+							<source type="image/webp" srcset="img/standard-bike-desktop.webp, img/standard-bike-desktop@2x.webp 2x ">
+							<source media="(max-width:767px)" srcset="img/standard-bike-tablet.jpg 1x, img/standard-bike-tablet@2x.jpg 2x ">
+							<source media="(max-width:1023px)" srcset="img/standard-bike-tablet.jpg 1x, img/standard-bike-tablet@2x.jpg 2x "> <img class="catalog__image" src="img/standard-bike-desktop.jpg" srcset="img/standard-bike-desktop@2x.jpg 2x" alt="Дорожный велосипед"> </picture> <a class="catalog__link" href="#">Дорожный велосипед</a> </li>
+					<li class="catalog__item">
+						<picture class="catalog__picture">
+							<source type="image/webp" media="(max-width:1023px)" srcset="img/mountain-bike-tablet.webp, img/mountain-bike-tablet@2x.webp 2x">
+							<source type="image/webp" srcset="img/mountain-bike-desktop.webp, img/mountain-bike-desktop@2x.webp 2x ">
+							<source media="(max-width:767px)" srcset="img/mountain-bike-tablet.jpg 1x, img/mountain-bike-tablet@2x.jpg 2x ">
+							<source media="(max-width:1023px)" srcset="img/mountain-bike-tablet.jpg 1x, img/mountain-bike-tablet@2x.jpg 2x "> <img class="catalog__image" src="img/mountain-bike-desktop.jpg" srcset="img/mountain-bike-desktop@2x.jpg 2x" alt="Дорожный велосипед"> </picture> <a class="catalog__link" href="#">Горный велосипед</a> </li>
+					<li class="catalog__item">
+						<picture class="catalog__picture">
+							<source type="image/webp" media="(max-width:1023px)" srcset="img/child-bike-tablet.webp, img/child-bike-tablet@2x.webp 2x">
+							<source type="image/webp" srcset="img/child-bike-desktop.webp, img/child-bike-desktop@2x.webp 2x ">
+							<source media="(max-width:767px)" srcset="img/child-bike-tablet.jpg 1x, img/child-bike-tablet@2x.jpg 2x ">
+							<source media="(max-width:1023px)" srcset="img/child-bike-tablet.jpg 1x, img/child-bike-tablet@2x.jpg 2x "> <img class="catalog__image" src="img/child-bike-desktop.jpg" srcset="img/child-bike-desktop@2x.jpg 2x" alt="Дорожный велосипед"> </picture> <a class="catalog__link" href="#">Детский велосипед</a> </li>
+				</ul>
+			</div>
+		</section>
+		<section class="video">
+			<div class="video__inner container">
+				<div class="video__header">
+					<h2 class="video__title">Видео про велосипеды</h2>
+					<p class="video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя</p>
+				</div>
+				<picture class="video__main">
+					<source type="image/webp" media="(max-width:767px)" srcset="img/bycicle-video-mobile.webp">
+					<source type="image/webp" media="(max-width:1023px)" srcset="img/bycicle-video-tablet.webp">
+					<source type="image/webp" srcset="img/bycicle-video-desktop.webp">
+					<source media="(max-width:767px)" srcset="img/bycicle-video-mobile.jpg">
+					<source media="(max-width:1023px)" srcset="img/bycicle-video-tablet.jpg"> <img class="video__image" src="img/bycicle-video-desktop.jpg" alt="Видео о велосипедах"> </picture>
+				<button type="button" class="video__button" aria-label="video button">
+					<svg class="video__button-svg" width="19" height="26" viewBox="0 0 19 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M0.757324 0.528564L18.8288 13.1786L0.757324 25.8287V0.528564Z" fill="#070707"></path> </svg>
+				</button>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<!--<iframe title="city map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300316!2d30.320858716173465!3d59.93871916905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1592513409258!5m2!1sru!2sru"></iframe>-->
+		<section class="footer__inner container">
+			<div class="footer__header">
+				<h2 class="footer__title">Как нас найти?</h2>
+				<p class="footer__text">Мы находимся по адресу: Санкт-Петербург, Большая конюшенная, д.19</p>
+			</div>
+			<div class="footer__map">
+				<picture class="footer__picture">
+					<source type="image/webp" media="(max-width:767px)" srcset="img/map-mobile.webp">
+					<source type="image/webp" media="(max-width:1023px)" srcset="img/map-tablet.webp">
+					<source type="image/webp" srcset="img/map-desktop.webp">
+					<source media="(max-width:767px)" srcset="img/map-mobile.jpg">
+					<source media="(max-width:1023px)" srcset="img/map-tablet.jpg"> <img class="footer__image" src="img/map-desktop.jpg" alt="Видео о велосипедах"> </picture>
+			</div>
+			<div class="footer__contacts"> <a class="footer__link footer__link-mail" href="mailto:puteshestviemechta@gmail.ru" aria-label="mail">puteshestviemechta@gmail.ru</a> <a class="footer__link footer__link-tel" href="tel:+74998468446" aria-label="phone">+7 (499)-784-684-46</a> </div>
+		</section>
+	</footer>
+	<script src="js/main.js"></script>
+</body>
+</html>
